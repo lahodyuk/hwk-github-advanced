@@ -1,0 +1,151 @@
+-- STEP 1. Work with branch
+- Create hwk git repositories at the GitHub.com
+https://github.com/lahodyuk/hwk-github-advanced
+- Clone to PC 
+git clone https://github.com/lahodyuk/hwk-github-advanced.git
+- create file Read Me in GitCMD for correct work 
+echo "<h1>GIT ADVANCED</h1>" > README.md
+- Check status and add test file
+git status
+git add .
+- Maked commit comment
+git commit -m "created hwk git adwance README.md"
+- Sending file to git 
+git push origin master
+- Show all avaliable and active branch
+git branch
+- create new branch 
+git branch architecture
+- Go to branch architecture
+git checkout architecture
+- Show all avaliable and active branch
+git branch
+- CREATE FOLDER LIKE HWK
+mkdir assets
+mkdir uploads
+echo "<h1>HOLLO GitHub!!!</h1>" > index.html
+- Check all makups and add
+git status  
+git add .
+- Add comment to changes 
+git commit -m "add folder and file like in hwk "
+- Go to folder assets and create 2 files (touch assets/css.js and css.js)
+echo "test all.js" > all.js
+echo "test css.js" > css.js
+- Watch status, commit and add file to branch
+cd .. 
+git status
+git add .
+git commit -m "add files all all.js and css.js in folder assets"
+git push origin architecture
+- Make ignor to folders UPLOADS
+cd uploads
+echo "/uploads/*" > .gitignore
+git status
+git add .
+git commit -m "add file .gitignore"
+git push origin architecture
+git checkout master
+git merge architecture
+git checkout master
+- Complit to merge and save changes 
+git push 
+- Delete archhotecture
+git branch --delete architecture
+git push origin master
+git branch
+- Persuaded only *master 
+
+-- STEP 2. Rebase
+git branch rebaset
+echo > rebasetest.txt
+git status
+git add .
+git commit -m "add rebasetest.txt"
+echo > rebasetest2.txt
+git add .
+git commit -m "add rebasetest2.txt"
+git branch
+git checkout rebaset
+git rebase master
+echo > rebasetest3.txt
+git add .
+git commit -m "Changes in file"
+git merge master
+git merge rebaset
+git checkout master
+git push
+git branch -D rebaset
+ 
+-- STEP 3. Tag
+git branch
+mkdir mitka
+cd mitka
+echo > exemple.txt
+cd ..
+git status
+cd mitka (version)
+echo "myversion" > exemple.txt
+cd ..
+git status
+git add .
+git commit -m "Add folder version with file"
+git tag 
+- To get - v0
+git push
+- Change file exemple.txt
+git status
+git add .
+git commit -m "Change file"
+git tag v1
+- See all vetsion 
+git tag 
+git push
+git push origin v1
+git log
+----https://git-scm.com/book/ru/v1/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-Git-%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D1%81-%D0%BC%D0%B5%D1%82%D0%BA%D0%B0%D0%BC%D0%B8
+
+-- STEP 4. Submodule
+git submodule add https://github.com/lahodyuk/hello-world-github
+git add .
+git commit -m "add submodule hello-world-github"
+git push
+ 
+-- STEP 5. Git Pages  https://lahodyuk.github.io/hwk-github-advanced/
+git branch gh-pages
+git checkout gh-pages
+git branch
+echo "<h1>Hello world)</h1>" > index.html
+git add .
+git commit -m "add test file index.html"
+git status
+git push origin gh-pages
+
+https://lahodyuk.github.io/hwk-github-advanced/index.html
+
+echo "<h2>This is some changes</h2>" > index.html
+git status
+git add .
+git commit -m "Add some changes"
+git push origin gh-pages
+
+- all changes complit
+https://lahodyuk.github.io/hwk-github-advanced/
+
+-- STEP 6. Conflict
+echo "Add some changes in this file" > file.txt
+git add .
+git commit -m "add new file.txt"
+git branch conflict
+git checkout conflict
+echo "get new changes if file for branch conflict" > file.txt
+git add .
+git commit -m "Change content in file.txt"
+git checkout master
+git merge conflict
+git merge --abort
+git merge conflict
+git add .
+git commit -m "resolved conflict"
+git status
+git push
