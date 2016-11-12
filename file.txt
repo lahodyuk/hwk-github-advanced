@@ -1,1 +1,1 @@
-"Add some changes in this file" 
+"get new changes if file for branch conflict" 
