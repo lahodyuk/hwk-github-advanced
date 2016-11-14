@@ -149,3 +149,49 @@ git add .
 git commit -m "resolved conflict"
 git status
 git push
+________________________________________________________________
+Add changes
+1. Зроби пулріквест і скині сюди лінк.
+git pull
+-- Already up-to-date.
+
+git pull origin
+-- Already up-to-date
+
+2. В task1 строка 42-43 створюєш .gitignor не в корені проекту.
+
+echo "/uploads/*" > .gitignore
+
+git add .
+
+git commit -m "add file .gitignore"
+-- 1 file changed, 1 insertion(+), 1 deletion(-)
+
+git push origin architecture
+
+git checkout master
+
+git merge architecture
+-- merge: architecture - not something we can merge
+
+git push
+-- done.
+
+git branch --delete architecture
+-- error: branch 'architecture' not found.
+
+git branch architecture
+
+git branch --delete architecture
+Deleted branch architecture (was 8f2fd53).
+
+git push origin master - 
+Everything up-to-date
+
+git branch 
+* master
+
+3. task2 строка 74 робиш merge в rebaset, а потрібно одразу в master.
+git commit -m "Changes in file"
+git merge master
+git merge rebaset - тут робив щоб на 100% всюдт зробити merge. В master було в попередній функції.
