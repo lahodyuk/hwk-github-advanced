@@ -151,14 +151,22 @@ git status
 git push
 ________________________________________________________________
 Add changes
+<<<<<<< HEAD
 1. Çðîáè ïóëð³êâåñò ³ ñêèí³ ñþäè ë³íê.
+=======
+1. Ð—Ñ€Ð¾Ð±Ð¸ Ð¿ÑƒÐ»Ñ€Ñ–ÐºÐ²ÐµÑÑ‚ Ñ– ÑÐºÐ¸Ð½Ñ– ÑÑŽÐ´Ð¸ Ð»Ñ–Ð½Ðº.
+>>>>>>> e2bd4649276fedb3901c3d535672caf762144580
 git pull
 -- Already up-to-date.
 
 git pull origin
 -- Already up-to-date
 
+<<<<<<< HEAD
 2. Â task1 ñòðîêà 42-43 ñòâîðþºø .gitignor íå â êîðåí³ ïðîåêòó.
+=======
+2. Ð’ task1 ÑÑ‚Ñ€Ð¾ÐºÐ° 42-43 ÑÑ‚Ð²Ð¾Ñ€ÑŽÑ”Ñˆ .gitignor Ð½Ðµ Ð² ÐºÐ¾Ñ€ÐµÐ½Ñ– Ð¿Ñ€Ð¾ÐµÐºÑ‚Ñƒ.
+>>>>>>> e2bd4649276fedb3901c3d535672caf762144580
 
 echo "/uploads/*" > .gitignore
 
@@ -191,7 +199,14 @@ Everything up-to-date
 git branch 
 * master
 
+<<<<<<< HEAD
 3. task2 ñòðîêà 74 ðîáèø merge â rebaset, à ïîòð³áíî îäðàçó â master.
 git commit -m "Changes in file"
 git merge master
 git merge rebaset - òóò ðîáèâ ùîá íà 100% âñþäò çðîáèòè merge. Â master áóëî â ïîïåðåäí³é ôóíêö³¿.
+=======
+3. task2 ÑÑ‚Ñ€Ð¾ÐºÐ° 74 Ñ€Ð¾Ð±Ð¸Ñˆ merge Ð² rebaset, Ð° Ð¿Ð¾Ñ‚Ñ€Ñ–Ð±Ð½Ð¾ Ð¾Ð´Ñ€Ð°Ð·Ñƒ Ð² master.
+git commit -m "Changes in file"
+git merge master
+git merge rebaset - Ñ‚ÑƒÑ‚ Ñ€Ð¾Ð±Ð¸Ð² Ñ‰Ð¾Ð± Ð½Ð° 100% Ð²ÑÑŽÐ´Ñ‚ Ð·Ñ€Ð¾Ð±Ð¸Ñ‚Ð¸ merge. Ð’ master Ð±ÑƒÐ»Ð¾ Ð² Ð¿Ð¾Ð¿ÐµÑ€ÐµÐ´Ð½Ñ–Ð¹ Ñ„ÑƒÐ½ÐºÑ†Ñ–Ñ—.
+>>>>>>> e2bd4649276fedb3901c3d535672caf762144580
